@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.UI", "OnlineStore.UI\OnlineStore.UI.csproj", "{A9B4E884-096E-4963-8513-56A1F0F0CD9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7D6137B1-BB86-4162-86A0-912D7649994D} = {7D6137B1-BB86-4162-86A0-912D7649994D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptions", "Encryptions\Encryptions.csproj", "{7D6137B1-BB86-4162-86A0-912D7649994D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{A9B4E884-096E-4963-8513-56A1F0F0CD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9B4E884-096E-4963-8513-56A1F0F0CD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9B4E884-096E-4963-8513-56A1F0F0CD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6137B1-BB86-4162-86A0-912D7649994D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6137B1-BB86-4162-86A0-912D7649994D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6137B1-BB86-4162-86A0-912D7649994D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6137B1-BB86-4162-86A0-912D7649994D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

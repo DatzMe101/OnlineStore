@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
+using Encryptions;
+
 
 namespace OnlineStore.UI
 {
-    class User
+    class User : Profile
     {
         private bool SaveRegistration(string name, string username, string encryptedPassword)
         {
@@ -20,8 +23,8 @@ namespace OnlineStore.UI
         private string EncryptPassword(string password)
         {
             // Do password encryption
-            string encryptedPassword = "56857cfc709d3996f057252c16ec4656f5292802";
-            return encryptedPassword;
+            Authentication auth = new Authentication();
+            return auth.EncryptPassword(password);
         }
 
         public bool Register(string name, string username, string password)
